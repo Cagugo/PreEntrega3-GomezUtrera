@@ -1,0 +1,51 @@
+$color_1: #fff;
+$color_2: #f5f5f5;
+$background-color_1: rgb(30,30,30);
+
+.wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: $background-color_1;
+}
+.column-3 {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	column-gap: 1rem;
+	row-gap: 1rem;
+}
+.menu-restaurante {
+	color: $color_1;
+	text-align: center;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	display: flex;
+	flex-flow: column;
+}
+hr {
+	background: black;
+	height: 2.5px;
+	width: 30px;
+	border: none;
+}
+.precio-menu {
+	font-weight: bold;
+	span {
+		font-size: 2rem;
+		color: $color_2;
+		text-shadow: 0 0 5px #03e903, 0 0 25px #03e903, 0 0 50px #03e903, 0 0 100px #03e903;
+		letter-spacing: 5px;
+		cursor: pointer;
+		text-transform: uppercase;
+		transition: 1s;
+	}
+}
+@media (max-width:768px) {
+	.columns {
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+@media (max-width:480px) {
+	.columns {
+		grid-template-columns: repeat(1,1fr);
+	}
+}
