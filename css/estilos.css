@@ -54,6 +54,7 @@ button:hover {
 
 header {
   background-color: rgb(245, 245, 245);
+  z-index: 1;
   position: fixed;
   width: 100%;
 }
